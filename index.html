@@ -33,6 +33,15 @@
 			text-align: auto;
 			margin: 0 auto;
 		}
+		.blinkie {
+			image-rendering: -moz-crisp-edges;         /* Firefox */
+			image-rendering:   -o-crisp-edges;         /* Opera */
+			image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+			image-rendering: crisp-edges;
+			-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+			max-width: 100%;
+			max-height: 100%;
+		}
 	</style>
 	<div class="container">
 		<h1>MrKomodoDragon's Website</h1>
@@ -43,6 +52,6 @@
 			Hello! You've the reached the website of MrKomodoDragon. One day
 			there will be more links here.
 		</h2>
-		<img src="blinkie.gif" srcset="blinkie-small.gif 150w, blinkie.gif 300w" sizes=" (width <= 400px) 150w, 300w" alt="A yellow sign blinking with the text 'UNDER CONSTRUCTION'">
+		<img class="blinkie" src="blinkie.gif" alt="A yellow sign blinking with the text 'UNDER CONSTRUCTION'">
 	</div>
 </html>
